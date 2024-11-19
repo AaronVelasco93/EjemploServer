@@ -1,18 +1,18 @@
 <?php
 // Conexión a la base de datos
-/*
+//credenciales de forma Local
 $host = 'localhost:3308'; // Cambia si tu servidor es diferente
 $user = 'root'; // Usuario de tu base de datos
 $password = '123456'; // Contraseña de tu base de datos
 $database = 'ejemplo_db'; // Nombre de la base de datos
-*/
-// Server Linux
 
+// Server Linux
+/*
 $host = 'localhost:3306'; // Cambia si tu servidor es diferente
 $user = 'huronmarron'; // Usuario de tu base de datos
 $password = '123456789'; // Contraseña de tu base de datos
 $database = 'prueba_bd'; // Nombre de la base de datos
-
+*/
 
 // Crear conexión
 $conexion = new mysqli($host, $user, $password, $database);
@@ -28,7 +28,7 @@ $result = $conexion->query($query);
 
 // Verificar si hay resultados
 if ($result->num_rows > 0) {
-    echo "<h1>Hola mundo, registro de base de datos</h1>"
+    echo "<h1>Hola mundo, registro de base de datos</h1>";
     echo "<table border='1' style='border-collapse: collapse; width: 80%; margin: 20px auto;'>";
     echo "<thead>";
     echo "<tr>";
